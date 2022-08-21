@@ -112,7 +112,17 @@ public class logCont {
                 signup.setResizable(false);
                 signup.show();
                 signup.setOnCloseRequest(e->{
-                    System.out.println("Noiceee");
+                    Stage signup = new Stage();
+                    Parent root = null;
+                    try {
+                        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                    Scene scene1 = new Scene(root);
+                    signup.setScene(scene1);
+                    signup.setResizable(false);
+                    signup.show();
                 });
 
             });
