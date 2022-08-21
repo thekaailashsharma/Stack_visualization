@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="432.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="437.0" fitWidth="774.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="244.0" fitWidth="204.0" layoutX="42.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ty.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="246.0" layoutY="134.0" prefHeight="190.0" prefWidth="398.0" text="Would love to hear your&#10;feedback. &#10;Please check your Inbox. &#10;Keep Learning !!&#10;Developer &#10;Kailash Sharma " textFill="#f2ebeb">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

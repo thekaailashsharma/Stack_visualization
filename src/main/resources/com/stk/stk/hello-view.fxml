@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stk.stk.HelloController">
+   <children>
+      <ImageView fitHeight="527.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </ImageView>
+      <Line endX="130.5999755859375" endY="179.62527465820312" layoutX="465.0" layoutY="163.0" startX="130.5999755859375" startY="-25.57470703125" stroke="#f7f6f6" strokeDashOffset="8.0" strokeLineCap="BUTT" />
+      <Line endX="57.5999755859375" endY="3.0517578125E-5" layoutX="697.0" layoutY="342.0" startX="-100.0" stroke="#fffafa" />
+      <Line endX="35.800048828125" endY="-180.97470092773438" layoutX="721.0" layoutY="316.0" startX="35.800048828125" startY="26.225311279296875" stroke="#f7f6f6" />
+      <Label layoutX="206.0" layoutY="109.0" prefHeight="18.0" prefWidth="290.0" text="Operations on Stack..." textFill="#efecec">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+
+      <RadioButton fx:id="push" layoutX="206.0" layoutY="158.0" mnemonicParsing="false" selected="true" text="Push" textFill="#fff7f7">
+         <font>
+            <Font name="Lucida Sans Unicode" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+         <tooltip>
+            <Tooltip text="Add elements to Stack" />
+         </tooltip></RadioButton>
+      <RadioButton fx:id="pop" layoutX="296.0" layoutY="158.0" mnemonicParsing="false" text="Pop" textFill="#fff7f7">
+         <font>
+            <Font name="Lucida Sans Unicode" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+         <tooltip>
+            <Tooltip text="Remove elements from Stack" />
+         </tooltip></RadioButton>
+      <TextField fx:id="enter_Push" layoutX="206.0" layoutY="208.0" onAction="#enter" promptText="Enter Element">
+         <tooltip>
+            <Tooltip text="This will go at the Top" />
+         </tooltip>
+      </TextField>
+      <Button fx:id="b1" layoutX="422.0" layoutY="192.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #f09554;" visible="false" />
+      <Button fx:id="e10" layoutX="596.0" layoutY="310.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #f09554; -fx-border-width: 2 0 0 0; -fx-border-color: black blue green yellow;" text="3" visible="false">
+         <font>
+            <Font name="Crimson Text" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="e11" layoutX="596.0" layoutY="279.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #f09554;-fx-border-width: 2 0 0 0; -fx-border-color: black blue green yellow;" text="3" visible="false">
+         <font>
+            <Font name="Crimson Text" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="e12" layoutX="596.0" layoutY="248.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #f09554;-fx-border-width: 2 0 0 0; -fx-border-color: black blue green yellow;" text="4" visible="false">
+         <font>
+            <Font name="Crimson Text" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="e13" layoutX="596.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #f09554; -fx-border-width: 4 0 0 0; -fx-border-color: black blue green yellow;" text="5" visible="false">
+         <font>
+            <Font name="Crimson Text" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="e14" layoutX="596.0" layoutY="188.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #f09554;-fx-border-width: 2 0 0 0; -fx-border-color: black blue green yellow;" text="6" visible="false">
+         <font>
+            <Font name="Crimson Text" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pushB" layoutX="378.0" layoutY="206.0" mnemonicParsing="false" style="-fx-background-color: #fff7f7;" text="Push" textFill="black">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Lucida Sans Unicode" size="13.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Push in the Stack" />
+         </tooltip>
+      </Button>
+      <Button fx:id="e15" layoutX="596.0" layoutY="157.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #f09554; -fx-border-width: 0 0 0 0; -fx-border-color: black blue green yellow;" text="7" visible="false">
+         <font>
+            <Font name="Crimson Text" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="l1" layoutX="206.0" layoutY="243.0" prefHeight="30.0" prefWidth="234.0" text="Label" textFill="#f4f2f2" visible="false">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="topL" layoutX="533.0" layoutY="310.0" prefHeight="30.0" prefWidth="54.0" text="Top ---&gt;" textFill="#fcf8f8" visible="false">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="popB" layoutX="199.0" layoutY="206.0" mnemonicParsing="false" onAction="#pop" prefHeight="30.0" prefWidth="244.0" style="-fx-background-color: #fff7f7;" text="Remove the Top Most Element" textFill="black" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Lucida Sans Unicode" size="13.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Pop from the Stack" />
+         </tooltip>
+      </Button>
+      <ImageView fx:id="sf" fitHeight="42.0" fitWidth="159.0" layoutX="596.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@sf.gif" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane" layoutX="14.0" layoutY="112.0" prefHeight="276.0" prefWidth="166.0" style="-fx-border-width: 0 1 0 0; -fx-border-color: white white green white; -fx-border-style: segments(5)  line-cap round ;">
+         <children>
+            <ImageView blendMode="LIGHTEN" fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@act.jpg" />
+               </image>
+            </ImageView>
+            <Label ellipsisString="" layoutX="56.0" layoutY="16.0" prefHeight="26.0" prefWidth="95.0" text="Your Activity" textFill="#faf6f6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect></Label>
+            <TextArea fx:id="textArea" editable="false" layoutX="10.0" layoutY="55.0" prefHeight="196.0" prefWidth="131.0" text="&#10;&#10;     No&#10;   Activity &#10;  Currently &#10;     :)" wrapText="true">
+               <font>
+                  <Font name="Lucida Handwriting Italic" size="15.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+      <ImageView fitHeight="72.0" fitWidth="350.0" layoutX="199.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lifo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="328.0" layoutY="289.0" prefHeight="72.0" prefWidth="166.0" text="Last in &#10;First Out" textFill="#efeded">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
